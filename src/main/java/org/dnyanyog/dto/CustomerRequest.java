@@ -15,7 +15,7 @@ public class CustomerRequest {
 
 	
 
-    @NotNull(message="First name is mendatory")
+    @NotNull(message="First name is mendatoryy")
     @NotBlank(message="First name should not be blank")
 	private String firstName;
     
