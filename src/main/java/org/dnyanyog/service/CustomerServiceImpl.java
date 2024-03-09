@@ -3,7 +3,7 @@ package org.dnyanyog.service;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Optional; // Correct import for Optional
+import java.util.Optional; 
 import org.dnyanyog.dto.CustomerRequest;
 import org.dnyanyog.dto.CustomerResponse;
 import org.dnyanyog.dto.SearchCustomerResponse;
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 @Service
-//@Component
+
 public class CustomerServiceImpl implements CustomerService {
 
     @Autowired
@@ -82,7 +82,7 @@ public class CustomerServiceImpl implements CustomerService {
             customer.setUpdated_date(LocalDateTime.now());
 
             try {
-                // Save the updated customer object
+               
                 customer = customerRepo.save(customer);
             } catch (Exception e) {
                 e.printStackTrace();
